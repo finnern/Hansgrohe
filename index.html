@@ -54,10 +54,8 @@
   <div id="error" style="display:none;"></div>
 <script>
 (function() {
-  // Always unhide the body at the start
-  document.body.style.display = "block"; // Always show the body
-
-  const password = prompt("Diese Seite ist geschützt. Bitte geben Sie das Passwort ein:");
+  document.body.style.display = "block";
+  var password = prompt("Diese Seite ist geschützt. Bitte geben Sie das Passwort ein:");
   if (password === "125hansgrohe") {
     document.getElementById('content').style.display = 'block';
     document.getElementById('error').style.display = 'none';
