@@ -54,17 +54,18 @@
 
 <script>
   const password = prompt("Diese Seite ist geschützt. Bitte geben Sie das Passwort ein:");
-  if (password === "125hansgrohe") {
-    document.body.style.display = "block";
-  } else {
-    document.body.innerHTML = `
-      <div style="text-align:center; margin-top: 5rem;">
-        <h2>Leider war das nicht das richtige Passwort.</h2>
-        <p>Aber wenn Sie Hansgrohe einfach erleben möchten – besuchen Sie gerne unsere offizielle Seite:</p>
-        <a href="https://www.hansgrohe-group.com" target="_blank" style="font-size: 1.2rem; color: #0074c2; text-decoration: underline;">www.hansgrohe-group.com</a>
-      </div>
-    `;
-  }
+if (password === "125hansgrohe") {
+  document.body.style.display = "block";
+} else {
+  document.body.innerHTML = `
+    <div style="text-align:center; margin-top: 5rem;">
+      <h2>Leider war das nicht das richtige Passwort.</h2>
+      <p>Aber wenn Sie Hansgrohe einfach erleben möchten – besuchen Sie gerne unsere offizielle Seite:</p>
+      <a href="https://www.hansgrohe-group.com" target="_blank" style="font-size: 1.2rem; color: #0074c2; text-decoration: underline;">www.hansgrohe-group.com</a>
+    </div>
+  `;
+  document.body.style.display = "block"; // <- add this line here
+}
 </script>
 
 </body>
