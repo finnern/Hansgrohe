@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>125 Jahre Hansgrohe – Jubiläumsseite</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 2rem;
+      display: none;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+    }
+    .cta a {
+      display: inline-block;
+      background-color: #0074c2;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>125 Jahre Hansgrohe</h1>
+    <p>Herzlich willkommen auf der interaktiven Jubiläumsseite.</p>
+    <p>Erleben Sie die Geschichte eines Weltmarktführers – und entdecken Sie, was mit KI, Storytelling und echter Tradition möglich wird.</p>
+
+    <h3>🧠 Fragen Sie unseren Hansgrohe-Geschichtenerzähler</h3>
+    <p><em>(Hier könnte Ihr KI-gestützter Chat starten)</em></p>
+
+    <h3>🔐 Ihr Jubiläum als lebendiges Archiv</h3>
+    <ul>
+      <li>Systematisch erhobene Geschichten aus allen Perspektiven</li>
+      <li>Multimediale Aufbereitung</li>
+      <li>Passwortgeschützte Plattform für Mitarbeitende & Partner</li>
+    </ul>
+
+    <div class="cta">
+      <a href="#">Pilotgespräch vereinbaren</a>
+    </div>
+  </div>
+
+  <script>
+    const password = prompt("Diese Seite ist geschützt. Bitte geben Sie das Passwort ein:");
+    if (password === "125hansgrohe") {
+      document.body.style.display = "block";
+    } else {
+      document.body.innerHTML = "<h2 style='text-align:center;margin-top:3rem;'>Zugriff verweigert.</h2>";
+    }
+  </script>
+</body>
+</html>
